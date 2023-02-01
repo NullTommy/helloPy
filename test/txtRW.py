@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*
 print('hello, world')
-
-# with open("input.txt", "r") as f:  #打开文件
-#     data = f.readline()  #读取文件
-#     print(data)
-
 a = 0
 sp = ""
 sp2 = ""
@@ -22,6 +17,8 @@ for line in open("input.txt"):
         continue
     if( "来自" in line):
         a = 1
+        continue
+    if( "条回复" in line):
         continue
     if(a==1):
         sp=":"
